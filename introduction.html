@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>What Can JavaScript Do?</h2>
+    <p id="demo">JavaScript can change HTML content..</p>
+
+    <button type="button"
+    onclick="document.getElementById('demo').innerHTML='Hello JavaScript'">Click</button>
+    <br>
+    <hr>
+    
+
+    <p>JavaScript can change HTML attribute values</p>
+
+    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+    <button type="button"
+    onclick="document.getElementById('myimage').src='https://imgs.search.brave.com/zo7m90d9MJNEuoK_GxIF_fth80J5rsku8BBPlP0AZV8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9nbG93aW5nLXll/bGxvdy1saWdodC1i/dWxiLXdoaXRlXzQ4/ODIyMC04Mi5qcGc_/c2VtdD1haXNfaHli/cmlkJnc9NzQw'">Turn on the light</button>
+
+    <img id="myimage" 
+    src="https://imgs.search.brave.com/xfN0rh1YaJ6YeOJGNG4UAUJgTk4ZSDMj03ajiX4XrCM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTg1/MjA2OTU4L3Bob3Rv/L2xpZ2h0LWJ1bGIu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PXVmZjMxQ2Y1UXkw/UnNzMk9CdzdhT3lz/dm9ERVZLSlZrNTNQ/ckxmekdwQkk9" 
+    style="width : 100px" alt="#">
+
+    <button type="button"
+    onclick="document.getElementById('myimage').src='https://imgs.search.brave.com/xfN0rh1YaJ6YeOJGNG4UAUJgTk4ZSDMj03ajiX4XrCM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTg1/MjA2OTU4L3Bob3Rv/L2xpZ2h0LWJ1bGIu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PXVmZjMxQ2Y1UXkw/UnNzMk9CdzdhT3lz/dm9ERVZLSlZrNTNQ/ckxmekdwQkk9'">Turn off the light</button>
+
+    <hr>
+    <br>
+
+    <p id="demo1">JavaScript can change the style of an HTML element.</p>
+
+    <button type="button"
+    onclick="document.getElementById('demo1').style.fontSize='30px'">Click Me!</button>
+    <hr> <br>
+
+    <p >JavaScript can show hidden HTML elements.</p>
+
+    <p id="demo2" style="display:none">Hello JavaScript!</p>
+    
+    <button type="button"
+    onclick="document.getElementById('demo2').style.display='block'">CLick revel block</button>
+</body>
+</html>

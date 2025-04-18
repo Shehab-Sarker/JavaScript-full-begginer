@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <!-- The <script> Tag
+    In HTML, JavaScript code is inserted between <script> and </script> tags. -->
+
+    <h2>JvaScript in body</h2>
+    <p id="demo"></p>
+
+    <script>document.getElementById('demo').innerHTML='My first JavaScript'</script>
+
+    <hr> <br>
+
+    <!-- JavaScript in <body>
+    In this example, a JavaScript function is placed in the <body> section of an HTML page.
+    The function is invoked (called) when a button is clicked: -->
+
+    <p id="demo1">This is a pragraph</p>
+
+    <button type="button"
+    onclick="myfunction()">Try it</button>
+
+    <script>
+        function myfunction(){
+            document.getElementById("demo1").innerHTML='When javascript function is placed in the body section.';
+        }
+    </script>
+
+    <hr> <br>
+
+    <!-- External JavaScript
+    Scripts can also be placed in external files: -->
+
+    <p id="demo2">My Funcion is stored in 'js_where_to'</p>
+
+    <button type="button"
+    onclick="myfunction1()">Click</button>
+
+    <script src="./js_where_to.js"></script>
+
+
+</body>
+</html>
